@@ -1,7 +1,6 @@
 # When2Meet Renewal Project
 웹사이트 <a href="https://www.when2meet.com/">when2meet</a> 리뉴얼 프로젝트를 위한 연습용 repository<br />
-Cotato 3rd, 2022.07.19~2022.08.30 <br />
-
+Cotato 3rd, 2022.07.25~2022.08.30 <br />
 
 <br/>
 <br/>
