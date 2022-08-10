@@ -1,0 +1,18 @@
+$black: #000;
+$white: #fff;
+
+.Button{
+    width: 150px;
+    height: 40px;
+    border-radius: 4px;
+    background-color: $black;
+    color: $white;
+    transition: all 0.3s;
+    &:hover{
+        width: 160px;
+        height: 50px;
+        background-color: lighten($black, 20%);
+        border: 0;
+        cursor: pointer;
+    }
+}

@@ -1,0 +1,37 @@
+@import 'reset.css';
+
+/* 얇은 글씨 */
+@font-face {
+    font-family: 'LeferiBaseType-RegularA';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2201-2@1.0/LeferiBaseType-RegularA.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* 굵은 글씨 */
+@font-face {
+    font-family: 'LeferiBaseType-BoldA';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2201-2@1.0/LeferiBaseType-BoldA.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+html, body{
+    width: 100vw;
+    height: 100vh;
+}
+
+body{
+    line-height: 150%;
+    font-family: 'LeferiBaseType-RegularA';    
+}
+
+h1 {
+    margin: 20px 0;
+    font-size: 2em;
+    font-family: 'LeferiBaseType-BoldA';
+}
+
+p{
+    margin: 10px 0;
+}
