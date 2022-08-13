@@ -6,7 +6,7 @@ Cotato 3rd, 2022.07.25~2022.08.30 <br />
 <br/>
 
 ## temp_design
-- React Router, Sass 활용
+- <code>React Router</code>, <code>Sass</code> 활용
 <p align="center">
 <img src="https://user-images.githubusercontent.com/66225688/183991567-ce1a852f-4af5-449b-86eb-e74be67ab5b9.gif" width=600px/>
 </p>
