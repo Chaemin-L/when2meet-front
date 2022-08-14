@@ -1,0 +1,82 @@
+html, body, #root {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    color: #333;
+    background: #fdfdfd;
+}
+
+.app {
+    position: relative;
+    min-height: 100%;
+    padding: 10px 20px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 800px;
+}
+
+body {
+    background: #fff;
+}
+
+
+.slot {
+    display: block;
+    width: 45px;
+    height: 10px;
+    background: #eee;
+    --color: #4af;
+    border-right: 0.5px solid black;
+    border-left: 0.5px solid black;
+    transition: all ease 0.2s;
+
+}
+
+.solid {
+    border-bottom: 0.5px solid black;
+}
+
+.dotted {
+    border-bottom: 0.5px dotted black;
+}
+
+.elements {
+    margin-top: 40px;
+    border: 0.5px solid black;
+    
+}
+
+.selecto-area .selected {
+    color: #fff;
+    background: var(--color);
+}
+
+.scroll {
+    overflow: auto;
+    padding-top: 10px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.infinite-viewer, .scroll {
+    width: 100%;
+    height: 300px;
+    box-sizing: border-box;
+}
+
+.infinite-viewer .viewport {
+    padding-top: 10px;
+}
+
+.empty.elements {
+    border: none;
+} 
