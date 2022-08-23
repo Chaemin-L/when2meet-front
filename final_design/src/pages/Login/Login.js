@@ -1,6 +1,7 @@
 import React from 'react';
 import { Input, CheckBox, Button } from 'components/index';
 import { Link, useNavigate } from 'react-router-dom';
+import googleLogo from'assets/img/google_logo.png';
 
 export default function Login() {
     // 로그인 인증 로직 구현시 삭제, 페이지 확인을 위한 임시 navigate
@@ -17,7 +18,7 @@ export default function Login() {
             </div>
             <div>
                 <Button onClick={() => navigate('/main')}> 로그인 </Button>
-                <Button> Sign in with Google </Button>
+                <Button> <img src={googleLogo} width={16} alt="구글 로고"/> Sign in with Google </Button>
             </div>
             <div>
                 아직 계정이 없으신가요?
