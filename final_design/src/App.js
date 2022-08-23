@@ -1,4 +1,5 @@
 import 'normalize.css';
+import GlobalStyle from "styles/GlobalStyle";
 import React from 'react';
 import { Routes, Route } from 'react-router-dom';
 import Initial from 'pages/Initial';
@@ -10,7 +11,8 @@ import MyPromises from 'pages/MyPromises/MyPromises';
 
 export default function App() {
   return (
-      <div>
+    <div>
+      <GlobalStyle />
           <Routes> 
             <Route path="/" element={<Initial />}>
               <Route path="" element={<Login />} />
