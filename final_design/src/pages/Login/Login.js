@@ -10,8 +10,8 @@ export default function Login() {
     return (
         <div>
             <h1>로그인하기</h1>
-            <Input header="ID" />
-            <Input header="Password" />
+            <Input option="wide" header="ID" />
+            <Input option="wide" header="Password" />
             <div>
                 <CheckBox text="정보를 기억합니다" />
                 <span>비밀번호 찾기</span> {/* 비밀번호 찾기 페이지 구현시 Link 태그로 변경*/}
