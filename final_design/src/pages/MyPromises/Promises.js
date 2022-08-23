@@ -23,7 +23,7 @@ export default function Promises({ promises }) {
     return <div>
         <Promise name='약속이름' isHeader={true} place='장소' text='메모'/>
         {promises.map((promise) => <Promise key={promise.id} promise={promise} />)}
-        <Button>약속완료</Button>
+        <Button option='xsmall'>약속완료</Button>
         
     </div>
 }

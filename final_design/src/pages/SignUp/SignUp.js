@@ -10,7 +10,7 @@ export default function SignUp() {
             <Input header="ID" />
             <Input header="Password" />
             <Input header="Confirm Password" />
-            <Button>회원가입하기</Button>
+            <Button option='large'>회원가입하기</Button>
             <div>
                 아직 계정이 이미 있으신가요?
                 <Link to='/'>로그인 하러 가기</Link>

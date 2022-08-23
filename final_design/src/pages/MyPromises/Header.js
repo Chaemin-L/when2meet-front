@@ -19,7 +19,7 @@ export default function Header({ id }) {
                 onChange={setSelectedDay}
                 shouldHighlightWeekends
             />
-            <Button>약속잡기</Button>
+            <Button option='small'>약속잡기</Button>
         </div>
     )
 }
