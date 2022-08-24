@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import palette from "styles/palette";
+import variable from "styles/variable";
 
 export const BackGroundWrapper = styled.div`
     display: flex;
@@ -15,9 +16,15 @@ export const BackGroundWrapper = styled.div`
 
 export const Wrapper = styled.div`
     width: 32vw;
-    height: 80vh;
+    height: 79vh;
     padding: 3.2rem 2.35rem;
     border: 2px solid ${palette.borderColor};
     border-radius: 10px;
     box-shadow: 0 4px 64px 0 ${palette.lightGray};
+
+    & > h2{
+        width: ${variable.inputSize.small.width};
+        margin: 0.5rem auto;
+        vertical-align: bottom;
+    }
 `

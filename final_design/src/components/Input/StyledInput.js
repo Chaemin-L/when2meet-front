@@ -4,6 +4,7 @@ import variable from 'styles/variable';
 const defaultInput = {
     display: 'block',
     margin: '1rem 0',
+    padding: '0 1rem',
     borderRadius: '6px',
     border: '1px solid palette.borderColor',
     boxSizing: 'border-box',
@@ -27,6 +28,7 @@ export const Label = styled.label`
     display: block;
     ${variable.fontSize.medium};
     ${(props) => props.option === 'wide' && css`${variable.fontSize.large}` };
+
 `
 
 export const StyledInput = styled.input`
