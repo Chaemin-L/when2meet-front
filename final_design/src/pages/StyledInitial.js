@@ -10,7 +10,7 @@ export const Header = styled.div`
 `
 
 export const InputForm = styled.div`
-    flex: 1 5 auto;
+    flex: 1 1 auto;
     display: flex;
     flex-direction: column;
     justify-content: center;

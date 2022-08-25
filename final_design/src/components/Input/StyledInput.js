@@ -18,6 +18,7 @@ const TitleInput = {
 
 const SmallInput = {
     ...variable.inputSize.small,
+    margin: '0.5rem 0',
 }
 
 const WideInput = {

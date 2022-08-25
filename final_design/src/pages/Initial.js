@@ -1,6 +1,6 @@
 import React from 'react';
 import { Outlet } from 'react-router-dom';
-import { BackGroundWrapper, Wrapper } from './Wrapper';
+import { BackGroundWrapper, Wrapper } from './StyledWrapper';
 
 export default function Initial() {
     return <BackGroundWrapper>
