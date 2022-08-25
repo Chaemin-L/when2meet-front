@@ -2,7 +2,7 @@ import 'normalize.css';
 import GlobalStyle from "styles/GlobalStyle";
 import React from 'react';
 import { Routes, Route } from 'react-router-dom';
-import Initial from 'pages/Initial';
+import Account from 'pages/Account';
 import Main from 'pages/Main';
 import Login from 'pages/Login/Login';
 import SignUp from 'pages/SignUp/SignUp';
@@ -14,7 +14,7 @@ export default function App() {
     <div>
       <GlobalStyle />
           <Routes> 
-            <Route path="/" element={<Initial />}>
+            <Route path="/" element={<Account />}>
               <Route path="" element={<Login />} />
               <Route path="signUp" element={<SignUp />} />
             </Route>

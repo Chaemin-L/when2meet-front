@@ -1,8 +1,8 @@
 import React from 'react';
 import { Outlet } from 'react-router-dom';
-import { BackGroundWrapper, Wrapper } from './StyledWrapper';
+import { BackGroundWrapper, Wrapper } from './StyledAccount';
 
-export default function Initial() {
+export default function Account() {
     return <BackGroundWrapper>
         <span>우리 언제 만나?</span>
         <Wrapper>

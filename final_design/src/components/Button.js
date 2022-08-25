@@ -32,7 +32,7 @@ const LargeButton = {
     color: 'white',
 }
 
-export const StyledButton = styled.button`
+export const Button = styled.button`
     ${defaultButton}
     &:hover{
         cursor: pointer;

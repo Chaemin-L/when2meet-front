@@ -34,7 +34,7 @@ export const Footer = styled.div`
     justify-content: space-between;
 `
 
-export const LoginBox = styled.div`
+export const StyledBox = styled.div`
     width: 100%;
     height: 93%;
     display: flex;

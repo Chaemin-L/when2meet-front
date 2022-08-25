@@ -2,14 +2,14 @@ import React from 'react';
 import { Input, CheckBox, Button } from 'components/index';
 import { Link, useNavigate } from 'react-router-dom';
 import googleLogo from 'assets/img/google_logo.png';
-import { Header, InputForm, Setting, ButtonSet, LoginBox, Footer } from 'pages/StyledInitial';
+import { Header, InputForm, Setting, ButtonSet, StyledBox, Footer } from 'components/StyledFloatingBox';
 
 export default function Login() {
     // 로그인 인증 로직 구현시 삭제, 페이지 확인을 위한 임시 navigate
     const navigate = useNavigate();
 
     return (
-        <LoginBox>
+        <StyledBox>
             <Header>
             <h1>로그인하기</h1>
             </Header>
@@ -29,6 +29,6 @@ export default function Login() {
                 <span>아직 계정이 없으신가요?</span>
                 <Link to='signUp'> 계정 등록 하러 가기</Link>
             </Footer>
-        </LoginBox>
+        </StyledBox>
     )
 };

@@ -1,0 +1,10 @@
+@import 'react-modern-calendar-datepicker/lib/DatePicker.css';
+
+.styled-input {
+    font-size: 1rem;
+
+}
+
+.styled-input:hover{
+        cursor: pointer;
+}
