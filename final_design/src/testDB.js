@@ -17,3 +17,18 @@ export const promises = [
     },
 
 ];
+
+export const menu = [
+    {
+        url: '',
+        text: '나의 약속'
+    },
+    {
+        url: 'profile',
+        text: '내 정보'
+    },
+    {
+        url: 'intro',
+        text: '서비스 소개'
+    },
+];
