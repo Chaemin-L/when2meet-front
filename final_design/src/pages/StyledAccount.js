@@ -20,7 +20,7 @@ export const Wrapper = styled.div`
     padding: 3.2rem 2.35rem;
     border: 2px solid ${palette.borderColor};
     border-radius: 10px;
-    box-shadow: 0 4px 64px 0 ${palette.lightGray};
+    box-shadow: 0 4px 64px 0 ${palette.gray};
 
     & > h2{
         width: ${variable.inputSize.small.width};

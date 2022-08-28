@@ -13,6 +13,7 @@ export const StyledNavLink = styled(Link)`
     display: flex;
     align-items: center;
     text-decoration: none;
+    font-weight: bold;
     color: black;
     &:hover{
         background-color: ${palette.activeColor};
