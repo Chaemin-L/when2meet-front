@@ -1,12 +1,32 @@
-import React from 'react';
-import { Label, StyledInput } from './StyledInput';
+import React, { useState } from 'react';
+import { StyledInput, StyledLabel } from './StyledInput';
+import visibility from 'assets/img/visibility.png';
+import visibilityOff from 'assets/img/visibilityOff.png';
 
-export default function Input({header, placeholder, option, onChange}) {
+export default function Input({ header, option, onChange, isPassword }) {
+    	// password visibility 제어
+        const [passwordType, setPasswordType] = useState({
+            type: 'password',
+            visible: false
+        });
+        
+        //password 제어 핸들러
+        const handlePasswordType = e => {
+            setPasswordType(() => {
+                if (!passwordType.visible) {
+                    e.target.src = visibility;
+                    return { type: 'text', visible: true };
+                }
+                e.target.src = visibilityOff;
+                return { type: 'password', visible: false };
+            })
+        }
     return (
         <div>
-            <Label option={option}> {header}
-                <StyledInput  placeholder={placeholder} onChange={onChange} option={option}/>
-            </Label>
+            <StyledLabel option={option}> {header}
+                <StyledInput onChange={onChange} option={option} {...passwordType} />
+                {isPassword && <img src={visibilityOff} onClick={handlePasswordType} alt='visibilityProps' />}
+            </StyledLabel>
         </div>
     )
 }

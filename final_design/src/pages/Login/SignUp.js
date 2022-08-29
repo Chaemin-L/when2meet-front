@@ -12,8 +12,8 @@ export default function SignUp() {
             <InputForm>
                 <Input header="Email" />
                 <Input header="ID" />
-                <Input header="Password" />
-                <Input header="Confirm Password" />
+                <Input header="Password" isPassword={true} />
+                <Input header="Confirm Password" isPassword={true}/>
             </InputForm>
             <ButtonSet>
                 <Button option='large'>회원가입하기</Button>

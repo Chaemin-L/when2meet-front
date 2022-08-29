@@ -5,6 +5,8 @@ import googleLogo from 'assets/img/google_logo.png';
 import { Header, InputForm, Setting, ButtonSet, StyledBox, Footer } from 'components/layout/StyledFloatingBox';
 
 export default function Login() {
+
+    
     // 로그인 인증 로직 구현시 삭제, 페이지 확인을 위한 임시 navigate
     const navigate = useNavigate();
 
@@ -15,7 +17,7 @@ export default function Login() {
             </Header>
             <InputForm>
                 <Input option="wide" header="ID" />
-                <Input option="wide" header="Password" />
+                <Input option="wide" header="Password" isPassword={true}/>
                 <Setting>
                     <CheckBox text="정보를 기억합니다" />
                     <Link to='/forget'>비밀번호 찾기</Link>

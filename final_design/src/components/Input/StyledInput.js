@@ -34,7 +34,6 @@ export const Label = styled.label`
 
 export const StyledInput = styled.input`
     ${defaultInput}
-
     ${(props) => {
     switch (props.option) {
         case 'title':
@@ -46,4 +45,20 @@ export const StyledInput = styled.input`
         };
     }
     };
+`
+
+export const StyledLabel = styled.label`
+    position: relative;
+    & > img {
+        position: absolute;
+        width: 1.6rem;
+        bottom: 0.8rem;
+        right: 1.2rem;
+        &:hover {
+            cursor: pointer;
+        }
+        &:active {
+            cursor: auto;
+        }
+    }
 `
