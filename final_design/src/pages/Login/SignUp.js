@@ -1,7 +1,7 @@
 import React from 'react';
 import { Input, Button } from 'components/index';
 import { Link } from 'react-router-dom';
-import { Header, InputForm, ButtonSet, StyledBox, Footer } from 'components/StyledFloatingBox';
+import { Header, InputForm, ButtonSet, StyledBox, Footer } from 'components/layout/StyledFloatingBox';
 
 export default function SignUp() {
     return (

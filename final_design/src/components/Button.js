@@ -8,10 +8,11 @@ const defaultButton = {
     borderRadius: '6px',
     textAlign: 'center',
     border: 0,
+    padding: '0 1rem',
 };
 
 const XsmallButton = {
-    ...variable.buttonSize.xsmall,
+    height: variable.buttonSize.xsmall.height,
     borderRadius: '40px',
     backgroundColor: palette.lightGray,
 }
