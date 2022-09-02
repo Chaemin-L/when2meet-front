@@ -10,7 +10,7 @@ export const Wrapper = styled.div`
 
 export const StyledHeader = styled.div`
     display: flex;
-    flex: 2 1 0;
+    flex: 1.5 1 0;
     justify-content: space-between;
     border-top: 1px solid ${palette.gray};
     & h2 {

@@ -3,7 +3,8 @@ import { CheckBox, Button } from 'components/index';
 import { PromiseBox, PromiseList, PromisesBox } from './styles';
 import { promiseList } from 'testDB';
 
-function Promise({ promise, checkedListHandler }) {
+function Promise({ promise }) {
+    // eslint-disable-next-line
     const [isChecked, setIsChecked] = useState(false);
 
     return (
@@ -22,6 +23,7 @@ function Promise({ promise, checkedListHandler }) {
 }
 
 export default function Promises() {
+    // eslint-disable-next-line
     const [promises, setPromises] = useState(promiseList);
 
     const header = { name: '약속이름', isHeader: true, place: '장소', text: '메모' };
