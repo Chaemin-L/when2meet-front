@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, { useState } from 'react';
 import 'react-modern-calendar-datepicker/lib/DatePicker.css';
 import { Button } from 'components/index';
 import { StyledHeader, ButtonSet } from './styles';
@@ -7,10 +7,9 @@ import right_arrow from 'assets/img/right_arrow.png';
 import left_arrow from 'assets/img/left_arrow.png';
 
 
-export default function Header({ id }) {
+export default function Header({ id, openModal }) {
     let today = new Date();
     const defaultValue = { year: today.getFullYear(), month: today.getMonth() + 1, day: today.getDate() };
-
     const [selectedDay, setSelectedDay] = useState(defaultValue);
 
     const onChangeDay = (i) => {
@@ -31,7 +30,7 @@ export default function Header({ id }) {
                     shouldHighlightWeekends
                 />
                 <img src={right_arrow} alt='오른쪽 화살표' onClick={(()=>onChangeDay(1))}/>
-                <Button option='small'>약속잡기</Button>
+                <Button option='small' onClick={openModal}>약속잡기</Button>
             </ButtonSet>
         </StyledHeader>
     )

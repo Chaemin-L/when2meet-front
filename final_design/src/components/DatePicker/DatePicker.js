@@ -7,6 +7,7 @@ import './DatePickerInput.css';
 const StyledDatePicker = styled.div`
     display: flex;
     align-items: center;
+    z-index: 0;
 `
 
 export default function DatePicker(props) {
