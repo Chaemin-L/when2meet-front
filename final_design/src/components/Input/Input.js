@@ -3,7 +3,7 @@ import { StyledInput, StyledLabel } from './StyledInput';
 import visibility from 'assets/img/visibility.png';
 import visibilityOff from 'assets/img/visibilityOff.png';
 
-export default function Input({ header, option, onChange, isPassword=false, placeholder='' }) {
+export default function Input({ header, option, inputProps, isPassword=false}) {
     // password visibility 제어
     const [passwordType, setPasswordType] = useState({
         type: 'text',
@@ -24,7 +24,7 @@ export default function Input({ header, option, onChange, isPassword=false, plac
     return (
         <div>
             <StyledLabel option={option}> {header}
-                <StyledInput onChange={onChange} option={option} placeholder={placeholder} {...passwordType} />
+                <StyledInput option={option} {...inputProps} {...passwordType} />
                 {isPassword && <img src={visibility} onClick={handlePasswordType} alt='visibilityProps' />}
             </StyledLabel>
         </div>
