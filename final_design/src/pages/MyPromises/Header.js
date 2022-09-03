@@ -6,16 +6,20 @@ import { DatePicker } from 'components/index';
 import right_arrow from 'assets/img/right_arrow.png';
 import left_arrow from 'assets/img/left_arrow.png';
 
+// Date 객체를 DatePicker에게 넘겨주기 위한 객체 형식으로 변환하는 함수
+function formatDate(date) {
+    return { year: date.getFullYear(), month: date.getMonth() + 1, day: date.getDate() }
+}
 
 export default function Header({ id, openModal }) {
     let today = new Date();
-    const defaultValue = { year: today.getFullYear(), month: today.getMonth() + 1, day: today.getDate() };
+    const defaultValue = formatDate(today);
     const [selectedDay, setSelectedDay] = useState(defaultValue);
 
     const onChangeDay = (i) => {
         let newDate = new Date(selectedDay.year, selectedDay.month-1, selectedDay.day);
         newDate.setDate(newDate.getDate() + i);
-        newDate = { year: newDate.getFullYear(), month: newDate.getMonth() + 1, day: newDate.getDate() };
+        newDate = formatDate(newDate);
         setSelectedDay(newDate);
     }
 
